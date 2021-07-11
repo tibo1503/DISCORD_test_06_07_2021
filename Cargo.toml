@@ -1,0 +1,26 @@
+[package]
+name = "test_06_07_2021"
+version = "0.1.0"
+authors = ["tibo1503 <thibo1503@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15"
+tracing = "0.1.23"
+tracing-subscriber = "0.2"
+#For all of the HTTP request in commands
+reqwest = "0.11"
+#For serialization/deserialization
+serde = "1.0"
+rand = "0.8"
+regex = "1.5"
+
+[dependencies.tokio]
+version = "1.0"
+features = ["macros", "signal", "rt-multi-thread"]
+
+[dependencies.serenity]
+features = ["cache", "framework", "standard_framework", "rustls_backend"]
+version = "0.10"

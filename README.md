@@ -1,0 +1,1 @@
+Any bot create in Rust to test a lot of things (troll or not)
